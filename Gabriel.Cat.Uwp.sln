@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gabriel.Cat.Wpf.UWP", "Gabriel.Cat.Wpf.UWP\Gabriel.Cat.Wpf.UWP.csproj", "{05675F23-97B2-4A65-AA69-8217056FEB8D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gabriel.Cat.Uwp", "Gabriel.Cat.Wpf.UWP\Gabriel.Cat.Uwp.csproj", "{05675F23-97B2-4A65-AA69-8217056FEB8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

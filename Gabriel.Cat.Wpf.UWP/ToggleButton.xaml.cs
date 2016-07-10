@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
 
-namespace Gabriel.Cat.Wpf.UWP
+namespace Gabriel.Cat.Uwp
 {
     public sealed partial class ToggleButton : UserControl
     {
@@ -24,7 +24,8 @@ namespace Gabriel.Cat.Wpf.UWP
         public event EventHandler<ToggleButtonArgs> ChangeIndex;
         public ToggleButton()
         {
-            
+            lstBmps = new Llista<Image>();
+            lstBmps.Updated += (s, e) => { Index = Index; };
             this.InitializeComponent();
         }
         public int Index
@@ -44,7 +45,10 @@ namespace Gabriel.Cat.Wpf.UWP
                 }
             }
         }
-
+        public Llista<Image> Images
+        {
+            get { return lstBmps; }
+        }
         private void imgButton_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
             Index++;

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Media;
 
-namespace Gabriel.Cat
+namespace Gabriel.Cat.Extension
 {
   public static class Brushes
     {
