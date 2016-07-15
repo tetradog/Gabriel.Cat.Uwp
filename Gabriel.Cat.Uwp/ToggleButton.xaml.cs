@@ -55,6 +55,7 @@ namespace Gabriel.Cat.Uwp
             if (ChangeIndex != null)
                 ChangeIndex(this, new ToggleButtonArgs(Index));
         }
+
     }
     public class ToggleButtonArgs : EventArgs
     {

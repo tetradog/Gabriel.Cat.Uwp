@@ -8,5 +8,5 @@
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400">
-    <Image x:Name="imgButton" PointerPressed="imgButton_PointerPressed"/>
+    <Image x:Name="imgButton"  PointerPressed="imgButton_PointerPressed"/>
 </UserControl>
