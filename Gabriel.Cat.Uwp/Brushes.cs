@@ -9,7 +9,7 @@ namespace Gabriel.Cat.Extension
 {
   public static class Brushes
     {
-        public static Brush ToBrush(this Windows.UI.Color color)
+        public static SolidColorBrush ToBrush(this Windows.UI.Color color)
         {
             return new SolidColorBrush(color);
         }

@@ -55,7 +55,13 @@ namespace Gabriel.Cat.Uwp
         public string Text
         {
             get { return txLabel.Text; }
-            set { txLabel.Text = value; }
+            set {
+                Action act = () =>
+                {
+                    txLabel.Text = value;
+                };
+                Dispatcher.BeginInvoke(act);
+            }
         }
         public TextBlock Label {
             get { return txLabel; }

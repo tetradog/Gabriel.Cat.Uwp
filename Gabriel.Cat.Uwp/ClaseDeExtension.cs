@@ -30,9 +30,11 @@ namespace Gabriel.Cat.Extension
         }
         #endregion
         #region Dispatcher
-        public static void BeginInvoke(this CoreDispatcher dispatcher,Action act)
+        public static void BeginInvoke(this CoreDispatcher dispatcher,Action act,CoreDispatcherPriority priority=CoreDispatcherPriority.Normal)
         {
-            dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { act.Invoke(); }).AsTask();
+            dispatcher.RunAsync(priority, () => {
+                act.Invoke();
+            }).AsTask();
 
         }
         #endregion
