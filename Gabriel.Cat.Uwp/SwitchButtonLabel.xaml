@@ -7,6 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     d:DesignWidth="400" Height="65.426">
-
-    <TextBlock x:Name="txLabel" PointerPressed="txLabel_PointerPressed"/>
+    <Grid x:Name="grControl">
+        <TextBlock x:Name="txLabel" PointerPressed="txLabel_PointerPressed"/>
+    </Grid>
 </UserControl>

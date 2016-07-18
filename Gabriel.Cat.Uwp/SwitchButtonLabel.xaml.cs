@@ -42,9 +42,9 @@ namespace Gabriel.Cat.Uwp
                 if (brushes.Count > 0)
                 {
                     index = Math.Abs(value) % brushes.Count;
-                    Background = brushes[index];
+                   grControl.Background = brushes[index];
                 }
-                else { index = 0; Background = Windows.UI.Colors.White.ToBrush(); }
+                else { index = 0;grControl.Background = Windows.UI.Colors.Black.ToBrush(); }
 
             }
         }
